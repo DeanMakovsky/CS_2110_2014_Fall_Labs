@@ -50,7 +50,8 @@ public class Student implements Comparable<Student>, Comparator<Student> {
 		 * two other things.
 		 */
 
-		// yes this is very similar to the compareTo method. The only difference is that we've swapped out "this" with "one"
+		// yes this is very similar to the compareTo method. The only difference
+		// is that we've swapped out "this" with "one"
 		double gpaDif = two.getGpa() - one.getGpa();
 		if (Math.abs(gpaDif) < 0.000001) {
 			return one.getName().compareTo(two.getName());
